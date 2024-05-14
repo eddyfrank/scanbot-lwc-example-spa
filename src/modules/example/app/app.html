@@ -1,0 +1,12 @@
+<template>
+    <main>
+        <h1>Scanbot Web Barcode Scanner SDK Example for LWC</h1>
+
+        <button onclick={startBarcodeScanner}>Start Barcode Scanner</button>
+
+        <!-- Note: lwc:dom="manual" is required! See https://lwc.dev/guide/javascript_third_party_library -->
+        <div lwc:dom="manual" id="scanner-view"></div>
+
+        <p>Scanned Barcode: {scannedBarcode}</p>
+    </main>
+</template>
